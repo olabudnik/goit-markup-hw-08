@@ -48,6 +48,14 @@ a {text-decoration: none;
 .not-current-page {color: #212121;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 .hero { background-color: #2F303A;
 }
 
