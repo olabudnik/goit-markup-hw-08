@@ -5,8 +5,10 @@ body {font-family: 'Roboto', sans-serif;
 nav { 
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
+}
+header span { color: #212121;
 }
 
 a:visited  {
@@ -14,25 +16,37 @@ a:visited  {
 }
 
 .logo {font-family:'Raleway', sans-serif;
+    color: #2196F3;
     font-size: 26px;
-    line-height: 1,1;
+    line-height: 1.1;
     letter-spacing: 0.03em;
 }
 
+
 .contact-link {color: #757575;
+    font-weight: 500;
+    line-height: 1.1;
+
 }
 
-.link-menu, .contact-link {
+.link a {
     font-size: 14px;
-    line-height: 1,1;
+    line-height: 1.1;
     letter-spacing: 0.02em;
 }
 
-.link a, .logo, .contact-link, .logo-footer {text-decoration: none;
+.link a, .logo, .contact-link {text-decoration: none;
 }
-a {text-decoration: none;}
 
-.logo-link, .link a:hover, .contact-link:hover {color: #2196F3;
+a {text-decoration: none;
+}
+
+.link a:hover, .contact-link:hover {color: #2196F3;
+}
+
+.logo {color: #2196F3;}
+
+.portfolio, .studio {color: #2196F3;
 }
 
 .hero { background-color: #2F303A;
@@ -47,44 +61,71 @@ a {text-decoration: none;}
 .logo-footer { color:#ffffff;}
 
 
-h1{font-size: 44px;
+.main-heading {font-size: 44px;
     color:#ffffff;
-    line-height: 1,3;
-    letter-spacing: 0.06em;
+    line-height: 1.3;
+    letter-spacing: 0.06em;t
+    text-transform: uppercase;
 }
 
-h2 {font-size: 36px;
-    line-height: 42px;
+.sub-heading {font-size: 36px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
 }
 
-h3 {font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
+.uppercase-secondary-heading {font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
-
-main {background-color: #F5F5F5;
+.secondary-heading {
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+}
+.card-names {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
 
 li {
     list-style-type: none;
 }
-p {color: #757575;
+.description {color: #757575;
     font-size: 14px;
-    line-height: 1,7;
+    line-height: 1.7;
     letter-spacing: 0.03em;}
 
-button {font-family: inherit
+.position {color: #757575;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+}    
+.type { color: #757575;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+}
+button {font-family: inherit;
+}
+ .button-hero {font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
 }
 button:hover {background-color: #2196F3;
 }
 
 footer {background-color: #2F303A;
+    color: #ffffff;
+}
+
+footer span {color:#ffffff;
 }
 
 address {
     font-size: 14px;
-    line-height: 1,7;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     font-style: normal;
 }
