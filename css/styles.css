@@ -12,7 +12,7 @@ header span {color: #212121;
 }
 
 a:visited  {
-            color:inherit;
+            color:#000000; 
 }
 
 .logo {font-family:'Raleway', sans-serif;
