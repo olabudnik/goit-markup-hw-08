@@ -8,7 +8,7 @@ nav {
     line-height: 1.1;
     letter-spacing: 0.02em;
 }
-header span { color: #212121;
+header span {color: #212121;
 }
 
 a:visited  {
@@ -41,8 +41,10 @@ a:visited  {
 a {text-decoration: none;
 }
 
-.link a:hover, .contact-link:hover {color: #2196F3;
+.link .logo, .link a:hover, .contact-link:hover {color: #2196F3;
 }
+
+
 
 .logo {color: #2196F3;}
 
@@ -98,18 +100,17 @@ li {
     letter-spacing: 0.03em;}
 
 .position {color: #757575;
-    font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
 }    
 .type { color: #757575;
-    font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.03em;
 }
 button {font-family: inherit;
 }
  .button-hero {font-size: 16px;
+    font-weight: 700;
     line-height: 1.8;
     letter-spacing: 0.06em;
 }
