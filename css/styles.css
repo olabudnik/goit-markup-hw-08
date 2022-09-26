@@ -8,9 +8,6 @@ nav {
     line-height: 1.1;
     letter-spacing: 0.02em;
 }
-header span {color: #212121;
-}
-
 
 .logo {font-family:'Raleway', sans-serif;
     color: #2196F3;
@@ -39,11 +36,12 @@ header span {color: #212121;
 a {text-decoration: none;
 }
 
-.link .logo, .link a:hover, .contact-link:hover {color: #2196F3;
+.link .logo, .logo:hover, .link a:hover, .contact-link:hover {color: #2196F3;
 }
 
-.logo {color: #2196F3;}
-.blue-logo {color: #2196F3;}
+.accent {
+    color: #212121;
+}
 
 .current-page {color: #2196F3;
 }
@@ -51,7 +49,7 @@ a {text-decoration: none;
 }
 
 a,
-a:visited,
+/* a:visited, */
 a:hover,
 a:active {
     text-decoration: none;
@@ -114,10 +112,11 @@ li {
     line-height: 1.8;
     letter-spacing: 0.03em;
 }
-button {font-family: inherit;
+button, .button-hero {font-family: inherit;
 }
- .button-hero {font-size: 16px;
-    font-weight: 900;
+ .button-hero {
+    font-size: 16px;
+    font-weight: 700;
     line-height: 1.8;
     letter-spacing: 0.06em;
 }
@@ -126,7 +125,8 @@ button:hover {background-color: #2196F3;
 
 .styled { font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
 }
 
 .styled:hover { color: #ffffff;}
