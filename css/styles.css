@@ -10,6 +10,9 @@ body {font-family: 'Roboto', sans-serif;
     --secondary-text-color:#757575; 
 }
 
+h1, h2, h3, p, ul { margin: 0;
+}
+
 nav { 
     font-weight: 500;
     font-size: 14px;
@@ -65,9 +68,12 @@ a:active {
 
 .hero { background-color: var(--background-color);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .team { background-color: var(--secondary-background-color);
+    padding-top: 
 }
 
 .contacts-footer {
@@ -108,12 +114,14 @@ a:active {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 20px;
 }
 
 .list {
     padding: 0;
     margin: 0;
     list-style-type: none;
+
 }
 .description { margin: 0;
     color: var(--secondary-text-color);
@@ -132,6 +140,8 @@ a:active {
 .type { color: var(--secondary-text-color);
     line-height: 1.8;
     letter-spacing: 0.03em;
+    margin-top: 4px;
+    padding-bottom: 94px;
 }
 
  .button-hero {
@@ -156,6 +166,9 @@ button:hover {background-color: var(--accent-color);
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
+    border-radius: 4px;
+    border-color: transparent;
+
 }
 
 .styled:hover { color: #ffffff;}
@@ -167,6 +180,8 @@ ul {list-style-type: none;
 
 footer {background-color: var(--background-color);
     color: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 footer span {color:#ffffff;
@@ -179,30 +194,48 @@ address {
     font-style: normal;
 }
 
-/* css module 3 */
-.page-header {background-color: #ccc;
+/* css module 3 index.html*/ 
+header {background-color: #ccc;
+    border-bottom: 1px solid #ECECEC;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
 }
-header {border-bottom: 1px solid #ECECEC;}
 
 .container {
-  background-color: tomato;
+  /* background-color:tomato; */
     width: 1200px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin: 0 auto;
 }
 
-/* .sub-heading {padding-top: 94px;
-    padding-bottom: ;
- } 
  .pecularities {
-     padding-top: 94px;
- } */
+    padding-top: 94px;
+    padding-bottom: 94px;   
+ }
+.sub-heading {
+    padding-top: 94px;
+}
+ .list-services {
+    padding-bottom: 94px;
+ }
 
-.section {padding-top: 94px;
-padding-bottom: 94px;}
+/* .section {padding-top: 94px;
+padding-bottom: 94px;} */
 
 .services {margin-top: 50px;
 }
 
 .our-team {
+    margin-top: 50px;
+    padding-bottom: 94px;
+}
+
+/* portfolio.html */
+.sorting {
+    margin-top: 94px; 
+}
+.examples {
     margin-top: 50px;
 }
