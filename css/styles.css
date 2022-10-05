@@ -121,15 +121,13 @@ margin-bottom: 20px;}
     font-size: 16px;
     line-height: 1.1;
     letter-spacing: 0.03em;
-    margin-top:30px;
-    margin-bottom: 0;
 }
+
 .card-names {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 20px;
-    padding-left: 20px;
+    
     
 }
 
@@ -151,8 +149,6 @@ margin-bottom: 20px;}
     line-height: 1.8;
     letter-spacing: 0.03em;
     margin-top: 4px;
-    padding-bottom: 94px;
-    padding-left: 20px;
 }
 
  .button-hero {
@@ -195,6 +191,7 @@ footer {background-color: var(--background-color);
     color: #ffffff;
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-top:94px;
 }
 
 footer span {color:#ffffff;
@@ -290,13 +287,12 @@ img {
 /* крайняя геометрия */
 .link-menu:last-child {margin-right: 0px;}
 
-/* portfolio card set */
+/* card set */
 .card-set {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    border-bottom: #2196F3 7px;
 }
 
 .cards {display: flex;
@@ -306,3 +302,16 @@ img {
     flex-basis: calc((100% - 60px) / 3);
 }
 
+.card-content {
+    padding: 20px 24px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+}
+
+.team-card-content { background-color: #FFFFFF;;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding: 30px;
+
+}
