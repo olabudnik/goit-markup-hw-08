@@ -191,7 +191,7 @@ footer {background-color: var(--background-color);
     color: #ffffff;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-top:94px;
+   
 }
 
 footer span {color:#ffffff;
@@ -241,7 +241,6 @@ align-items: center;
     margin-left: 30px;
 }
 
-
 .our-team { display:flex;
     margin-top: 50px;
     padding-bottom: 94px;
@@ -283,7 +282,7 @@ img {
     margin-left: auto;
 }
 
-
+.main-section {padding-bottom:94px ;}
 /* крайняя геометрия */
 .link-menu:last-child {margin-right: 0px;}
 
