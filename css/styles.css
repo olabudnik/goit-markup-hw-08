@@ -243,13 +243,17 @@ column-gap: 10px;}
     background-color:#ffffff;
     border-radius: 50%;
 }
-.social-list-icon {fill: #AFB1B8;}
+.social-media-icon {fill: var(--icon-color-grey);}
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
     background: var(--accent-color);
 }
-.social-link:hover svg {fill: var(#ffffff);
+
+.social-link:hover .social-media-icon {
+    fill: #ffffff;
 }
+
 /* css module 3 index.html*/ 
 header {
     border-bottom: 1px solid #ECECEC;
