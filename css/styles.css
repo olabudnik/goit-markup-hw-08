@@ -40,16 +40,15 @@ nav {
     letter-spacing: 0.03em;
 }
 
-.icon-header { display:inline;
-    align-self: center;
-    column-gap: 10px;
-    fill: var(--icon-color-grey);
+.icon-header { 
+    fill: currentColor;
+    margin-right: 10px;
 }
 
 .icon-header:hover {fill: var(--accent-color);}
 
 .contact-link {display: flex;
-    margin-left: auto;
+    align-items: center;
     color: var(--secondary-text-color);
     font-size: 14px;
     font-weight: 500;
@@ -78,7 +77,7 @@ nav {
 .not-current-page {color: var(--text-color);
 }
 
-.current-page, .not-current-page, .list .contact-link { display: block;
+.current-page, .not-current-page { display: block;
     padding-top: 30px;
     padding-bottom: 30px;}
 a,
