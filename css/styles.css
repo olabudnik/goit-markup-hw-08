@@ -300,8 +300,20 @@ align-items: center;
     padding-top: 94px;
  }
 
- .feauture-list {gap: 30px;
+ .feature-list { 
+    gap: 30px;
 }
+
+.icon-pecularities {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 120px;
+        background-color:var(--secondary-background-color);
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
 
 .feauture-list .item {
     width: 270px;
