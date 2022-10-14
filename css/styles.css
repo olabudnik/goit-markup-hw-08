@@ -114,6 +114,7 @@ column-gap: 30px;
  align-items: center;
  width: 170px;
  height: 92px; 
+ color: var(--icon-color-grey);
  border: 1px solid #AFB1B8;
  border-radius: 4px;
     }
@@ -121,7 +122,7 @@ column-gap: 30px;
 .client{display: flex;
 }
 
-.clients-list-icon { fill: var(--icon-color-grey);
+.clients-list-icon { fill: currentColor;
     
 }
 .clients-list-icon:hover {
