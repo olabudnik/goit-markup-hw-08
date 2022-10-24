@@ -681,6 +681,7 @@ margin-right: 9px;
 .modal-form-checkbox:focus +.modal-form-own-checkbox {
    outline: 2px solid black;
 }
+
 .modal-form-checkbox { position: absolute;
 appearance: none;}
 
@@ -696,8 +697,8 @@ text-decoration: underline;}
     min-height: 50px;}
 
 /* form in the footer */
-.newsletter {margin-left: 93px;
 
+.newsletter {margin-left: 93px;
 }
 
 .follow-us-footer {
@@ -738,5 +739,4 @@ text-decoration: underline;}
 .newsletter-form-icon { position: absolute;
     margin-left: 10px;
    fill: #FFFFFF;
-
 }
