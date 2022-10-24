@@ -602,6 +602,96 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="call-back-form">
+          <p class="form-heading">Залиште свої дані, ми вам передзвонимо</p>
+          <label>
+            <span class="modal-form-input-desc">Ім’я</span>
+            <span class="modal-form-input-wrapper">
+              <input
+                type="text"
+                name="user_name"
+                class="call-back-form-input"
+                required
+              />
+              <svg
+                class="icon-modal-form"
+                width="12"
+                height="12"
+                aria-label="користувач"
+              >
+                <use href="./images/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+          <label>
+            <span class="modal-form-input-desc">Телефон</span>
+            <span class="modal-form-input-wrapper">
+              <input
+                type="tel"
+                name="user_telephone"
+                class="call-back-form-input"
+                required
+              />
+              <svg
+                class="icon-modal-form"
+                width="12"
+                height="12"
+                aria-label="телефон"
+              >
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label>
+            <span class="modal-form-input-desc">Пошта</span>
+            <span class="modal-form-input-wrapper">
+              <input
+                type="email"
+                name="user_email"
+                class="call-back-form-input"
+                required
+              />
+              <svg
+                class="icon-modal-form"
+                width="12"
+                height="12"
+                aria-label="пошта"
+              >
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </span>
+          </label>
+          <label>
+            <span class="modal-form-input-desc">Коментар</span>
+            <textarea
+              name="user_comment"
+              id="comment"
+              placeholder="Введіть текст"
+              class="comment-textarea"
+            ></textarea>
+          </label>
+          <label class="modal-form-checkbox-wrapper">
+            <input
+              type="checkbox"
+              class="modal-form-checkbox"
+              name="user_policy"
+            />
+            <svg
+              class="modal-form-own-checkbox"
+              width="16"
+              height="16"
+              aria-label="згода"
+            >
+              <use
+                class="modal-form-own-checkbox-icon"
+                href="./images/symbol-defs.svg#icon-check"
+              ></use>
+            </svg>
+            Погоджуюся з розсилкою та приймаю&nbsp
+            <a href="" class="terms">Умови договору</a>
+          </label>
+          <button type="submit" class="button-modal">Відправити</button>
+        </form>
         <button type="button" class="modal-close-button" data-modal-close>
           <svg
             class="modal-close-icon"
