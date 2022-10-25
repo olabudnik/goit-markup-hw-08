@@ -624,6 +624,19 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <button type="button" class="modal-close-button" data-modal-close>
+          <svg
+            class="modal-close-icon"
+            width="17"
+            height="17"
+            aria-label="хрестик"
+          >
+            <use
+              class="modal-close-icon-animated"
+              href="./images/symbol-defs.svg#icon-close-black"
+            ></use>
+          </svg>
+        </button>
         <form class="call-back-form">
           <p class="form-heading">Залиште свої дані, ми вам передзвонимо</p>
           <label class="modal-form-input">
@@ -714,16 +727,6 @@
           </label>
           <button type="submit" class="button-modal">Відправити</button>
         </form>
-        <button type="button" class="modal-close-button" data-modal-close>
-          <svg
-            class="modal-close-icon"
-            width="17"
-            height="17"
-            aria-label="хрестик"
-          >
-            <use href="./images/symbol-defs.svg#icon-close-black"></use>
-          </svg>
-        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>

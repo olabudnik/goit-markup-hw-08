@@ -571,6 +571,8 @@ transition: transform 250ms linear;}
 .modal-close-button:hover, 
 .modal-close-button:focus{border-color: var(--accent-color);
 }
+
+
  /* doesnt work */
 .modal-close-icon {transition: fill var(--transition-dur-and-func);
  }
@@ -578,6 +580,10 @@ transition: transform 250ms linear;}
 .modal-close-button:hover .modal-close-icon,
 .modal-close-button:focus .modal-close-icon {
     border-color: fill (--accent-color);
+}
+
+.modal-close-icon-animated:focus {
+    color: var(--accent-color);
 }
 
 /* call back form */
@@ -590,9 +596,8 @@ transition: transform 250ms linear;}
     margin-bottom: 30px;
 }
 
-.modal-form-input { display: block;
+.modal-form-input:not(:first-child) { display: block;
     margin-top: 10px;
-    margin-bottom: 4px;
 }
 
 .call-back-form-input {
@@ -679,7 +684,7 @@ margin-right: 9px;
 .modal-form-checkbox:checked + .modal-form-own-checkbox .modal-form-own-checkbox-icon { display: block;
 }
 
-.modal-form-checkbox:focus +.modal-form-own-checkbox {
+.modal-form-checkbox:focus + .modal-form-own-checkbox {
    outline: 2px solid black;
 }
 
