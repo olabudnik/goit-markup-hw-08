@@ -1,0 +1,43 @@
+.clients-full-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.clients-list {
+    width: 170px;
+    height: 92px;
+}
+
+.client {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: var(--icon-color-grey);
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border var(--transition-dur-and-func),
+        color var(--transition-dur-and-func);
+}
+
+.clients-list-icon {
+    fill: currentColor;
+}
+
+.client:hover svg,
+.client:focus svg {
+    fill: var(--accent-color);
+}
+
+.client:hover,
+.client:focus {
+    border: 1px solid #2196f3;
+    fill: var(--accent-color);
+    border-radius: 4px;
+}
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}

@@ -1,0 +1,41 @@
+footer {
+    display: flex;
+    background-color: var(--background-color);
+    color: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+footer span {
+    color: #ffffff;
+}
+
+address {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    margin-top: 20px;
+    margin-right: 70px;
+}
+
+address>p {
+    margin-bottom: 9px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo-footer {
+    @extend %logo;
+}
+
+.contacts-footer {
+    color: #ffffff99;
+}
+
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
+}

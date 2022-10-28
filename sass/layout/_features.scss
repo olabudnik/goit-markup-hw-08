@@ -1,0 +1,31 @@
+.pecularities {
+    padding-top: 94px;
+}
+
+.feature-list {
+    gap: 30px;
+}
+
+.icon-pecularities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--secondary-background-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.feauture-list .item {
+    width: 270px;
+}
+
+.description {
+    margin: 0;
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+}

@@ -1,0 +1,12 @@
+%logo {
+    font-family: "Raleway", sans-serif;
+    color: var(--accent-color);
+    font-size: 26px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    &:hover{ color: var(--accent-color)};
+}
+
+.accent {
+    color: var(--text-color);
+}
