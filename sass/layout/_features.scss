@@ -6,7 +6,7 @@
     gap: 30px;
 }
 
-.icon-pecularities {
+.feature-list__item__icon-pecularities {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,11 +17,11 @@
     margin-bottom: 30px;
 }
 
-.feauture-list .item {
+.feauture-list .feature-list__item {
     width: 270px;
 }
 
-.description {
+.feature-list__item__description {
     margin: 0;
     color: var(--secondary-text-color);
     font-size: 14px;
