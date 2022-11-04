@@ -1,7 +1,35 @@
+// .container {
+//     width: 1200px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+
 .container {
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+// 480px +
+ @media screen  and (min-width:480px) {
+    .container { width: 480px;
     margin-left: auto;
     margin-right: auto;
-}
+    } 
+ }
+
+
+// 786px +
+ @media screen and (min-width:786px) {
+     .container {
+         width: 786px;
+     }
+ }
+// 1200px +
+ @media screen and (min-width:1200px) {
+     .container {
+         width: 1200px;
+
+     }
+ }

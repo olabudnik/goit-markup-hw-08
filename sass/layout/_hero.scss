@@ -13,6 +13,20 @@
         url(../images/Img_hero.jpg);
 }
 
+@media screen and (min-width: 480px) {
+    .hero {
+    background-image:
+    urL(../images/potato.jpg)
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        background-image:
+            urL(../images/roasted.jpg)
+    }
+}
+
 .button-hero {
     @extend %button;
     padding: 10px 32px 10px 32px;

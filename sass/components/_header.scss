@@ -1,7 +1,51 @@
+// 0 - 767 px
+@media screen and (max-width: 767px) { 
+.page-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.site-nav {
+        @media screen and (max-width:767px) {
+    display: none;
+        }
+}
+
+.contact {
+    display: none;
+}
+
+.page-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-menu-btn {
+    border: none;
+    background-color: transparent;
+    padding-top: 0;
+    line-height: 0;
+
+    @media screen and (min-width:768px) {
+        display: none;        
+    }
+}
+}
+
 header {
     border-bottom: 1px solid #ececec;
 }
 
+@media screen and (min-width: 768px) {
+    .contact {
+        display: flex;
+        align-items: center;
+    }
+    
+.mobile-menu-btn {display: none;
+}
+}
 .main-nav {
     display: flex;
     align-items: center;
