@@ -621,6 +621,7 @@ nav {
   display: block;
   width: 100%;
   height: auto;
+  margin: auto;
 }
 
 .feature-list__item {
@@ -656,7 +657,7 @@ nav {
   margin-bottom: 30px;
 }
 
-.feauture-list .feature-list__item {
+.feature-list .feature-list__item {
   width: 270px;
 }
 
@@ -667,6 +668,12 @@ nav {
   line-height: 1.7;
   letter-spacing: 0.03em;
   margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .list-services {
+    display: none;
+  }
 }
 
 .list-services {

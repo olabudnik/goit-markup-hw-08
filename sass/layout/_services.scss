@@ -1,4 +1,10 @@
 .list-services {
+@media (max-width: 767px) {
+        display: none
+    }
+}
+
+.list-services {
     padding-top: 94px;
     padding-bottom: 94px;
 }
