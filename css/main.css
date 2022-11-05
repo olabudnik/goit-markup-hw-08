@@ -73,6 +73,13 @@ a,
   padding-right: 15px;
 }
 
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -210,7 +217,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .contact {
-    display: flex;
+    flex-direction: column;
     align-items: center;
   }
   .mobile-menu-btn {

@@ -27,25 +27,37 @@
     padding-top: 0;
     line-height: 0;
 
-    @media screen and (min-width:768px) {
-        display: none;        
+.current-page {
+        color: var(--accent-color);
     }
-}
-}
+
+    .not-current-page {
+        color: var(--text-color);
+    }
 
 header {
     border-bottom: 1px solid #ececec;
 }
 
+
+
+// 768+ 
+
 @media screen and (min-width: 768px) {
-    .contact {
-        display: flex;
-        align-items: center;
-    }
-    
+
 .mobile-menu-btn {display: none;
 }
+
+// .desktop-contact {
+//     flex-direction: column;
+//     align-items: center;
+    
+//     }
+.contact {
+    display: block;
 }
+}
+
 .main-nav {
     display: flex;
     align-items: center;
@@ -125,6 +137,10 @@ nav {
     color: var(--accent-color);
 }
 
+//  checked if the blue line will disappear in the mobile version -- it didnt 
+
+@media screen and (min-width: 1200px) {
+
 .current-page {
     color: var(--accent-color);
     &:hover, &:focus {
@@ -157,4 +173,4 @@ nav {
     padding-bottom: 30px;
     transition: color var(--transition-dur-and-func);
 }
-
+}
