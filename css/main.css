@@ -289,6 +289,7 @@ nav {
 
 .page-header-container {
   display: flex;
+  align-items: center;
 }
 
 .contact-link {
@@ -297,7 +298,6 @@ nav {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.1;
-  margin-left: 96px;
   transition: color var(--transition-dur-and-func);
 }
 .contact-link:hover, .contact-link:focus {
@@ -358,6 +358,9 @@ nav {
   }
   .contact .item + .item {
     margin-left: 50px;
+  }
+  .contact .item + .item {
+    margin-top: 0px;
   }
 }
 .form-heading {

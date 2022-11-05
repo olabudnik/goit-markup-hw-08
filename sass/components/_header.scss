@@ -101,6 +101,7 @@ nav {
 }
 
 .page-header-container {display: flex;
+    align-items: center;
 }
 
 .contact-link {
@@ -110,7 +111,7 @@ nav {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.1;
-    margin-left: 96px;
+    // margin-left: 96px;
     // padding-top: 32px;
     // padding-bottom: 32px;
     transition: color var(--transition-dur-and-func);
@@ -143,7 +144,7 @@ nav {
     color: var(--accent-color);
 }
 
-
+// 1200+
 
 @media screen and (min-width: 1200px) {
 
@@ -186,8 +187,11 @@ nav {
 }
 
 
-.contact .item+.item {
+.contact .item +.item {
     margin-left: 50px;
 }
 
+.contact .item+.item {
+    margin-top: 0px;
+}
 }
