@@ -1,30 +1,60 @@
 .hero {
-    background-color: var(--background-color);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 1600px;
     text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-color: #2f303a;
+    
+    @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-    margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/Img_hero.jpg);
-}
-
-@media screen and (min-width: 480px) {
-    .hero {
-    background-image:
-    urL(../images/potato.jpg)
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .hero {
-        background-image:
-            urL(../images/roasted.jpg)
-    }
+.hero {
+    max-width: 480px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background-phone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/background-phone@2x.png');
+}
+
+  // tablet
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/background-tablet.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/background-tablet@2x.png');
+  }
+
+  // desktop
+
+  @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/background-desktop.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/background-desktop@2x.png');
+  }
 }
 
 .button-hero {
@@ -36,3 +66,18 @@
             color: #ffffff;
     }
 }
+
+// .hero {
+//     background-color: var(--background-color);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     max-width: 1600px;
+//     text-align: center;
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+//     margin: 0 auto;
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+//             rgba(47, 48, 58, 0.4)),
+//         url(../images/Img_hero.jpg);
+// }

@@ -26,6 +26,7 @@
     background-color: transparent;
     padding-top: 0;
     line-height: 0;
+}
 
 .current-page {
         color: var(--accent-color);
@@ -38,8 +39,7 @@
 header {
     border-bottom: 1px solid #ececec;
 }
-
-
+}
 
 // 768+ 
 
@@ -137,7 +137,7 @@ nav {
     color: var(--accent-color);
 }
 
-//  checked if the blue line will disappear in the mobile version -- it didnt 
+
 
 @media screen and (min-width: 1200px) {
 

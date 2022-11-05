@@ -123,6 +123,8 @@ a,
   }
   .mobile-menu__container {
     position: relative;
+    padding-top: 48px;
+    padding-left: 40px;
   }
   .mobile-menu__close-btn {
     position: absolute;
@@ -134,29 +136,34 @@ a,
     padding: 0;
     line-height: 0;
   }
-  .mobile-menu__close-btn:hover, .mobile-menu__close-btn:focus {
-    fill: var(--accent-color);
-  }
   .mobile-menu-nav__link {
     margin-bottom: 32px;
+    font-weight: 500;
     font-size: 40px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: #212121;
-  }
-  .mobile-menu-nav__link:hover, .mobile-menu-nav__link:focus {
-    color: var(--accent-color);
+    transition: color var(--transition-dur-and-func);
   }
   .mobile-menu-nav {
-    padding-top: 48px;
-    padding-left: 40px;
     margin-bottom: 302px;
   }
-  .mobile-contacts {
-    padding-left: 40px;
+  .mobile-contacts__link__accent {
+    margin-bottom: 32px;
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    text-decoration: none;
   }
   .mobile-contacts__link {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
+    color: #757575;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
   }
   .mobile-social-list {
     display: flex;
@@ -164,6 +171,16 @@ a,
   .mobile-social-list__link {
     position: relative;
     margin-right: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--accent-color);
+  }
+  .mobile-social-list__link::after {
+    content: " ";
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
 @media screen and (min-width: 768px) {
@@ -206,22 +223,27 @@ a,
     line-height: 0;
   }
 }
-@media screen and (max-width: 767px) and (min-width: 768px) {
-  .mobile-menu-btn {
-    display: none;
+@media screen and (max-width: 767px) {
+  .current-page {
+    color: var(--accent-color);
   }
 }
-header {
-  border-bottom: 1px solid #ececec;
+@media screen and (max-width: 767px) {
+  .not-current-page {
+    color: var(--text-color);
+  }
 }
-
+@media screen and (max-width: 767px) {
+  header {
+    border-bottom: 1px solid #ececec;
+  }
+}
 @media screen and (min-width: 768px) {
-  .contact {
-    flex-direction: column;
-    align-items: center;
-  }
   .mobile-menu-btn {
     display: none;
+  }
+  .contact {
+    display: block;
   }
 }
 .main-nav {
@@ -298,39 +320,37 @@ nav {
   color: var(--accent-color);
 }
 
-.current-page {
-  color: var(--accent-color);
-}
-.current-page:hover, .current-page:focus {
-  color: var(--accent-color);
-}
-
-.current-page::after {
-  content: " ";
-  position: absolute;
-  bottom: -4%;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: var(--accent-color);
-  border-radius: 2px;
-}
-
+@media screen and (min-width: 1200px) {
+  .current-page {
+    color: var(--accent-color);
+  }
+  .current-page:hover, .current-page:focus {
+    color: var(--accent-color);
+  }
+  .current-page::after {
+    content: " ";
+    position: absolute;
+    bottom: -4%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+  }
+  .not-current-page {
+    color: var(--text-color);
+  }
+  .not-current-page:hover, .not-current-page:focus {
+    color: var(--accent-color);
+  }
+  .current-page,
 .not-current-page {
-  color: var(--text-color);
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: color var(--transition-dur-and-func);
+  }
 }
-.not-current-page:hover, .not-current-page:focus {
-  color: var(--accent-color);
-}
-
-.current-page,
-.not-current-page {
-  display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  transition: color var(--transition-dur-and-func);
-}
-
 .form-heading {
   font-weight: 700;
   font-size: 20px;
@@ -518,34 +538,80 @@ nav {
 }
 
 .hero {
-  background-color: var(--background-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 1600px;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin: 0 auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img_hero.jpg);
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: #2f303a;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
-@media screen and (min-width: 480px) {
+.hero {
+  max-width: 480px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-phone.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: url(../images/potato.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-phone@2x.png");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-tablet.png");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-tablet@2x.png");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url(../images/roasted.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-desktop.png");
   }
 }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-desktop@2x.png");
+  }
+}
+
 .button-hero {
   padding: 10px 32px 10px 32px;
 }
 .button-hero:hover, .button-hero:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+}
+
+.feature-list {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.feature-list__item {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .feature-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
 }
 
 .pecularities {
