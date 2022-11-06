@@ -34,7 +34,7 @@ text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
+    // width: 270px;
     height: 120px;
     background-color: var(--secondary-background-color);
     border-radius: 4px;
@@ -42,7 +42,15 @@ text-align: center;
 }
 
 .feature-list .feature-list__item {
-    width: 270px;
+    max-width: 450px;
+
+    @media screen and (min-width: 767px) {
+    max-width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+     max-width: 270px;
+    }
 }
 
 .feature-list__item__description {
