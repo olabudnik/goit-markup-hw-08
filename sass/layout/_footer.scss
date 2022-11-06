@@ -1,9 +1,19 @@
 footer {
-    display: flex;
+    display: block;
+    // display: flex;
     background-color: var(--background-color);
     color: #ffffff;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (max-width:785px) {
+                text-align: center;
+        }
+  
+@media screen and (min-width:786px) {
+    display: flex;
+}
+
 }
 
 footer span {
@@ -16,7 +26,14 @@ address {
     letter-spacing: 0.03em;
     font-style: normal;
     margin-top: 20px;
-    margin-right: 70px;
+    margin-bottom: 60px;
+
+
+    @media screen and (min-width:786px) {
+        margin-top: 20px;
+        margin-right: 70px;
+        }
+
 }
 
 address>p {
@@ -24,8 +41,15 @@ address>p {
 }
 
 .footer-container {
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
+    
+
+@media screen and (min-width:786px) {
+        display: flex;
+        align-items: baseline;
+    }
+
 }
 
 .logo-footer {
