@@ -378,6 +378,23 @@ nav {
   z-index: 10;
   background-color: rgba(47, 48, 58, 0.4);
   transition: opacity 500ms, visibility 500ms;
+  overflow-y: scroll;
+}
+@media screen and (max-width: 480px) {
+  .backdrop {
+    padding-top: 93px;
+    padding-bottom: 93px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 678px) {
+  .backdrop {
+    padding-top: 208px;
+    padding-bottom: 208px;
+    padding-left: 159px;
+    padding-right: 159px;
+  }
 }
 
 .backdrop.is-hidden {
