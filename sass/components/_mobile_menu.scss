@@ -40,10 +40,10 @@
     padding: 0;
     line-height: 0;
 
-    // &:hover,
-    // &:focus {
-    //     fill: var(--accent-color);
-    // }
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
 }
 
 .mobile-menu-nav__link {
@@ -55,9 +55,9 @@
     color: #212121;
     transition: color var(--transition-dur-and-func);
 
-// &:hover,
-// &:focus { color: var(--accent-color);
-// }
+&:hover,
+&:focus { color: var(--accent-color);
+}
 
 }
 .mobile-menu-nav {
@@ -110,13 +110,10 @@
             border-left: 1px solid rgba(33, 33, 33, 0.2);
         }
 }
-
-
 }
 
 @media screen and (min-width: 768px) {
     .mobile-menu {
         display: none;
     }
-
 }
