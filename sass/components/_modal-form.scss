@@ -1,4 +1,12 @@
-
+.modal {
+    @media screen and (min-width: 786px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 450px ;
+    }
+}
 .form-heading {
     font-weight: 700;
     font-size: 20px;
