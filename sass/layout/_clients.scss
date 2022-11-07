@@ -10,8 +10,17 @@ column-gap: 30px;
 }
 
 .clients-list {
+        width: 210px;
+        height: 92px;
+
+    @media screen and (min-width: 768px) {
+    width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
     width: 170px;
     height: 92px;
+    }
 }
 
 .client {
