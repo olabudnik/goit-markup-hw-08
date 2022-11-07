@@ -13,7 +13,6 @@ footer {
 @media screen and (min-width:786px) {
     display: flex;
 }
-
 }
 
 footer span {
@@ -26,7 +25,7 @@ address {
     letter-spacing: 0.03em;
     font-style: normal;
     margin-top: 20px;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
 
 
     @media screen and (min-width:786px) {
@@ -43,14 +42,13 @@ address>p {
 .footer-container {
     // display: flex;
     // align-items: baseline;
-    
-
-@media screen and (min-width:786px) {
+@media screen and (min-width:1200px) {
         display: flex;
         align-items: baseline;
     }
-
 }
+
+.footer-container-styled {margin-bottom: 60px}
 
 .logo-footer {
     @extend %logo;
