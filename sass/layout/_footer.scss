@@ -42,13 +42,30 @@ address>p {
 .footer-container {
     // display: flex;
     // align-items: baseline;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
 @media screen and (min-width:1200px) {
         display: flex;
         align-items: baseline;
     }
+
 }
 
-.footer-container-styled {margin-bottom: 60px}
+.footer-container-styled {
+@media screen and (max-width: 787px) {
+    margin-bottom: 60px;
+}
+
+text-align: center;}
+
+.social-links-styled {text-align: center;}
 
 .logo-footer {
     @extend %logo;
@@ -61,3 +78,4 @@ address>p {
 .address-item:not(:last-child) {
     margin-bottom: 9px;
 }
+

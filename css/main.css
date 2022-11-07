@@ -636,7 +636,7 @@ nav {
   fill: white;
 }
 
-@media screen and (max-width: 785px) {
+@media screen and (max-width: 1199px) {
   .newsletter {
     margin-top: 60px;
     text-align: center;
@@ -1226,6 +1226,15 @@ address > p {
   margin-bottom: 9px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: flex;
@@ -1234,7 +1243,16 @@ address > p {
 }
 
 .footer-container-styled {
-  margin-bottom: 60px;
+  text-align: center;
+}
+@media screen and (max-width: 787px) {
+  .footer-container-styled {
+    margin-bottom: 60px;
+  }
+}
+
+.social-links-styled {
+  text-align: center;
 }
 
 .contacts-footer {
