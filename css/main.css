@@ -671,6 +671,7 @@ nav {
 }
 
 .newsletter-input {
+  width: 450px;
   height: 50px;
   padding: 15px;
   background-color: transparent;
