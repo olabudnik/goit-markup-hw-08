@@ -648,7 +648,7 @@ nav {
     align-items: center;
   }
 }
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .newsletter {
     margin-left: 93px;
   }
@@ -726,7 +726,7 @@ nav {
   fill: #ffffff;
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .follow-us-form-wrapper {
     display: flex;
     flex-wrap: wrap;
