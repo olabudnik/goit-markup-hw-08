@@ -1248,6 +1248,11 @@ address {
     margin-top: 20px;
   }
 }
+@media screen and (min-width: 1200px) {
+  address {
+    margin-right: 70px;
+  }
+}
 
 address > p {
   margin-bottom: 9px;
