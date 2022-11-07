@@ -78,7 +78,7 @@
 }
 
 .mobile-contacts__link {
-    margin-bottom: 64px;
+    
     color: #757575;
     font-weight: 500;
     font-size: 24px;
@@ -87,10 +87,9 @@
 }
 
 
-// .mobile-contacts {
-//     padding-left: 40px;
-
-// }
+.mobile-contacts {
+margin-bottom: 64px;
+}
 
 
 .mobile-social-list {display: flex;
