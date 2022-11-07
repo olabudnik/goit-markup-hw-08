@@ -6,11 +6,11 @@ footer {
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media screen and (max-width:785px) {
+    @media screen and (max-width:768px) {
                 text-align: center;
         }
   
-@media screen and (min-width:786px) {
+@media screen and (min-width:768px) {
     display: flex;
 }
 }
@@ -28,7 +28,7 @@ address {
     // margin-bottom: 60px;
 
 
-    @media screen and (min-width:786px) {
+    @media screen and (min-width:768px) {
         margin-top: 20px;
         margin-right: 70px;
         }
@@ -59,13 +59,16 @@ address>p {
 }
 
 .footer-container-styled {
-@media screen and (max-width: 787px) {
+@media screen and (max-width: 768px) {
     margin-bottom: 60px;
+    text-align: center;
 }
 
-text-align: center;}
-
-.social-links-styled {text-align: center;}
+.social-links-styled {
+    @media screen and (max-width: 768px) {
+    text-align: center;
+}
+}
 
 .logo-footer {
     @extend %logo;
@@ -79,3 +82,4 @@ text-align: center;}
     margin-bottom: 9px;
 }
 
+}

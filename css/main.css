@@ -32,14 +32,14 @@ ul {
   display: flex;
 }
 
-.logo-footer, .logo-header {
+.footer-container-styled .logo-footer, .logo-header {
   font-family: "Raleway", sans-serif;
   color: var(--accent-color);
   font-size: 26px;
   line-height: 1.1;
   letter-spacing: 0.03em;
 }
-.logo-footer:hover, .logo-header:hover {
+.footer-container-styled .logo-footer:hover, .logo-header:hover {
   color: var(--accent-color);
 }
 
@@ -87,9 +87,9 @@ a,
     margin-right: auto;
   }
 }
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .container {
-    width: 786px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -666,7 +666,6 @@ nav {
 }
 
 .newsletter-input {
-  width: 358px;
   height: 50px;
   padding: 15px;
   background-color: transparent;
@@ -675,6 +674,16 @@ nav {
   border-radius: 4px;
   transition: border-color var(--transition-dur-and-func);
   outline: none;
+}
+@media screen and (min-width: 768px) {
+  .newsletter-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .newsletter-input {
+    width: 358px;
+  }
 }
 
 .newsletter-input::placeholder {
@@ -714,6 +723,8 @@ nav {
 @media screen and (min-width: 786px) {
   .follow-us-form-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -1193,12 +1204,12 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (max-width: 785px) {
+@media screen and (max-width: 768px) {
   footer {
     text-align: center;
   }
 }
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   footer {
     display: flex;
   }
@@ -1215,7 +1226,7 @@ address {
   font-style: normal;
   margin-top: 20px;
 }
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   address {
     margin-top: 20px;
     margin-right: 70px;
@@ -1242,23 +1253,20 @@ address > p {
   }
 }
 
-.footer-container-styled {
-  text-align: center;
-}
-@media screen and (max-width: 787px) {
+@media screen and (max-width: 768px) {
   .footer-container-styled {
     margin-bottom: 60px;
+    text-align: center;
   }
 }
-
-.social-links-styled {
-  text-align: center;
+@media screen and (max-width: 768px) {
+  .footer-container-styled .social-links-styled {
+    text-align: center;
+  }
 }
-
-.contacts-footer {
+.footer-container-styled .contacts-footer {
   color: rgba(255, 255, 255, 0.6);
 }
-
-.address-item:not(:last-child) {
+.footer-container-styled .address-item:not(:last-child) {
   margin-bottom: 9px;
 }/*# sourceMappingURL=main.css.map */
